@@ -1,0 +1,418 @@
+@font-face {
+  font-family: 'vtx-ic';
+  src:  url('fonts/vtx-ic.eot?w1xnd8');
+  src:  url('fonts/vtx-ic.eot?w1xnd8#iefix') format('embedded-opentype'),
+    url('fonts/vtx-ic.ttf?w1xnd8') format('truetype'),
+    url('fonts/vtx-ic.woff?w1xnd8') format('woff'),
+    url('fonts/vtx-ic.svg?w1xnd8#vtx-ic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.vic {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vtx-ic' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vi-icon-vantenox:before {
+  content: "\e971";
+}
+.vi-icon-vtx-thin:before {
+  content: "\e972";
+}
+.vi-icon-vtx-solid:before {
+  content: "\e973";
+}
+.vi-icon-vtx-reverse:before {
+  content: "\e974";
+}
+.vi-icon-cat:before {
+  content: "\e930";
+}
+.vi-icon-abstract_liquid:before {
+  content: "\e931";
+}
+.vi-icon-abstract_liquid_line:before {
+  content: "\e932";
+}
+.vi-icon-adidas:before {
+  content: "\e933";
+}
+.vi-icon-angel_pray:before {
+  content: "\e934";
+}
+.vi-icon-angel:before {
+  content: "\e939";
+}
+.vi-icon-apps:before {
+  content: "\e93a";
+}
+.vi-icon-aquarius:before {
+  content: "\e93b";
+}
+.vi-icon-barong_mask:before {
+  content: "\e93c";
+}
+.vi-icon-beach:before {
+  content: "\e93d";
+}
+.vi-icon-borobudur:before {
+  content: "\e93e";
+}
+.vi-icon-building:before {
+  content: "\e93f";
+}
+.vi-icon-bull_skeleton:before {
+  content: "\e940";
+}
+.vi-icon-bull_skull:before {
+  content: "\e941";
+}
+.vi-icon-burger:before {
+  content: "\e942";
+}
+.vi-icon-chat:before {
+  content: "\e943";
+}
+.vi-icon-chevron:before {
+  content: "\e944";
+}
+.vi-icon-corruption:before {
+  content: "\e945";
+}
+.vi-icon-dog:before {
+  content: "\e946";
+}
+.vi-icon-egypt-anubis:before {
+  content: "\e947";
+}
+.vi-icon-egypt-bird:before {
+  content: "\e948";
+}
+.vi-icon-egypt-chanuphis:before {
+  content: "\e949";
+}
+.vi-icon-egypt-cleopatra:before {
+  content: "\e94a";
+}
+.vi-icon-egypt-eye_of_horus:before {
+  content: "\e94b";
+}
+.vi-icon-egypt-papyrus:before {
+  content: "\e94c";
+}
+.vi-icon-egypt-pyramid:before {
+  content: "\e94d";
+}
+.vi-icon-egypt-queen:before {
+  content: "\e94e";
+}
+.vi-icon-egypt-ramses:before {
+  content: "\e94f";
+}
+.vi-icon-egypt-scarab:before {
+  content: "\e950";
+}
+.vi-icon-egypt-sekhmet:before {
+  content: "\e951";
+}
+.vi-icon-egypt-sun_goddess:before {
+  content: "\e952";
+}
+.vi-icon-egytp-cat:before {
+  content: "\e953";
+}
+.vi-icon-evil_wing:before {
+  content: "\e954";
+}
+.vi-icon-eye-mask:before {
+  content: "\e955";
+}
+.vi-icon-fan:before {
+  content: "\e956";
+}
+.vi-icon-ganesha:before {
+  content: "\e957";
+}
+.vi-icon-heart_brush_abstract:before {
+  content: "\e958";
+}
+.vi-icon-hill:before {
+  content: "\e959";
+}
+.vi-icon-kabuto:before {
+  content: "\e95a";
+}
+.vi-icon-keris:before {
+  content: "\e95b";
+}
+.vi-icon-lantern:before {
+  content: "\e95c";
+}
+.vi-icon-lochness:before {
+  content: "\e95d";
+}
+.vi-icon-lotus:before {
+  content: "\e95e";
+}
+.vi-icon-mad_devil:before {
+  content: "\e95f";
+}
+.vi-icon-moon:before {
+  content: "\e960";
+}
+.vi-icon-open_drive:before {
+  content: "\e961";
+}
+.vi-icon-outline_heart:before {
+  content: "\e962";
+}
+.vi-icon-poison:before {
+  content: "\e963";
+}
+.vi-icon-rangda_mask:before {
+  content: "\e964";
+}
+.vi-icon-rocket_pixel:before {
+  content: "\e965";
+}
+.vi-icon-sea_turtle:before {
+  content: "\e966";
+}
+.vi-icon-ship:before {
+  content: "\e967";
+}
+.vi-icon-sign:before {
+  content: "\e968";
+}
+.vi-icon-sunrise:before {
+  content: "\e969";
+}
+.vi-icon-target_square:before {
+  content: "\e96a";
+}
+.vi-icon-target:before {
+  content: "\e96b";
+}
+.vi-icon-two_mask:before {
+  content: "\e96c";
+}
+.vi-icon-waves:before {
+  content: "\e96d";
+}
+.vi-icon-wind_shape:before {
+  content: "\e96e";
+}
+.vi-icon-wind:before {
+  content: "\e96f";
+}
+.vi-icon-world_grid:before {
+  content: "\e970";
+}
+.vi-icon-tenox:before {
+  content: "\e91c";
+}
+.vi-icon-tenox_v:before {
+  content: "\e92d";
+}
+.vi-icon-tenox_t:before {
+  content: "\e92e";
+}
+.vi-icon-tenox_solid:before {
+  content: "\e92f";
+}
+.vi-icon-twitter_x:before {
+  content: "\e92c";
+}
+.vi-icon-file:before {
+  content: "\e927";
+}
+.vi-icon-database_cloud:before {
+  content: "\e928";
+}
+.vi-icon-bug:before {
+  content: "\e929";
+}
+.vi-icon-db:before {
+  content: "\e92a";
+}
+.vi-icon-data_collection:before {
+  content: "\e92b";
+}
+.vi-icon-vuejs:before {
+  content: "\e91e";
+}
+.vi-icon-angular:before {
+  content: "\e91f";
+}
+.vi-icon-bootstrap:before {
+  content: "\e920";
+}
+.vi-icon-javascript:before {
+  content: "\e921";
+}
+.vi-icon-laravel:before {
+  content: "\e922";
+}
+.vi-icon-nextjs:before {
+  content: "\e923";
+}
+.vi-icon-reactjs:before {
+  content: "\e924";
+}
+.vi-icon-tailwindcss:before {
+  content: "\e925";
+}
+.vi-icon-tiktok:before {
+  content: "\e926";
+}
+.vi-icon-dragon-vtx:before {
+  content: "\e91a";
+}
+.vi-icon-excalibur:before {
+  content: "\e91b";
+}
+.vi-icon-spooky:before {
+  content: "\e935";
+}
+.vi-icon-cute_ghost:before {
+  content: "\e936";
+}
+.vi-icon-zombie:before {
+  content: "\e937";
+}
+.vi-icon-grim-reaper:before {
+  content: "\e938";
+}
+.vi-icon-bali:before {
+  content: "\e919";
+}
+.vi-icon-code:before {
+  content: "\e912";
+}
+.vi-icon-apollo:before {
+  content: "\e913";
+}
+.vi-icon-bull:before {
+  content: "\e914";
+}
+.vi-icon-dragon:before {
+  content: "\e915";
+}
+.vi-icon-chess:before {
+  content: "\e916";
+}
+.vi-icon-dragon-face:before {
+  content: "\e917";
+}
+.vi-icon-toxic:before {
+  content: "\e90a";
+}
+.vi-icon-demon:before {
+  content: "\e909";
+}
+.vi-icon-garuda:before {
+  content: "\e90b";
+}
+.vi-icon-papua:before {
+  content: "\e90c";
+}
+.vi-icon-indonesia:before {
+  content: "\e90d";
+}
+.vi-icon-jawa:before {
+  content: "\e90e";
+}
+.vi-icon-sulawesi:before {
+  content: "\e90f";
+}
+.vi-icon-kalimantan:before {
+  content: "\e910";
+}
+.vi-icon-sumatra:before {
+  content: "\e911";
+}
+.vi-icon-leaf:before {
+  content: "\e918";
+}
+.vi-icon-satanism:before {
+  content: "\e91d";
+}
+.vi-icon-evil-heart:before {
+  content: "\e900";
+}
+.vi-icon-broken_heart:before {
+  content: "\e902";
+}
+.vi-icon-twitter:before {
+  content: "\e903";
+}
+.vi-icon-telegram:before {
+  content: "\e904";
+}
+.vi-icon-github:before {
+  content: "\e905";
+}
+.vi-icon-facebook_logo:before {
+  content: "\e906";
+}
+.vi-icon-discord:before {
+  content: "\e907";
+}
+.vi-icon-controller:before {
+  content: "\e908";
+}
+.vi-icon-web:before {
+  content: "\e9c9";
+}
+.vi-icon-facebook_solid:before {
+  content: "\ea91";
+}
+.vi-icon-instagram:before {
+  content: "\ea92";
+}
+.vi-icon-whatsapp:before {
+  content: "\ea93";
+}
+.vi-icon-youtube:before {
+  content: "\ea9d";
+}
+.vi-icon-deviantart:before {
+  content: "\eaaa";
+}
+.vi-icon-github_square:before {
+  content: "\eab0";
+}
+.vi-icon-linkedin:before {
+  content: "\eac9";
+}
+.vi-icon-pinterest:before {
+  content: "\ead1";
+}
+.vi-icon-html:before {
+  content: "\eae4";
+}
+.vi-icon-css:before {
+  content: "\eae6";
+}

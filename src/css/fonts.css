@@ -1,0 +1,77 @@
+/*!
+ * Fonts Optionslly Used
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.ff-asar {
+  font-family: Asar, serif;
+}
+.ff-figtree {
+  font-family: Figtree, sans-serif;
+}
+.ff-gabarito {
+  font-family: Gabarito, cursive;
+}
+.ff-inconsolata {
+  font-family: Inconsolata, monospace;
+}
+.ff-inter {
+  font-family: Inter, sans-serif;
+}
+.ff-jost {
+  font-family: Jost, sans-serif;
+}
+.ff-lora {
+  font-family: Lora, serif;
+}
+.ff-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+.ff-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.ff-serif-jp {
+  font-family: "Noto Serif JP", serif;
+}
+.ff-onest {
+  font-family: Onest, sans-serif;
+}
+.ff-oxygen {
+  font-family: Oxygen, sans-serif;
+}
+.ff-poppins {
+  font-family: Poppins, sans-serif;
+}
+.ff-pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+}
+.ff-amiri-ab {
+  font-family: Amiri, serif;
+}
+.ff-black-han-sans-kr {
+  font-family: "Black Han Sans", sans-serif;
+}
+.ff-dela-gothic-one-jp {
+  font-family: "Dela Gothic One", sans-serif;
+}
+.ff-ma-shan-zheng-cn {
+  font-family: "Ma Shan Zheng", cursive;
+}
+.ff-zhi-mang-zheng-cn {
+  font-family: "Zhi Mang Xing", cursive;
+}
+.ff-serif-cn {
+  font-family: "Noto Serif SC", serif;
+}
+.ff-lexend {
+  font-family: "lexend", sans-serif;
+}
+.ff-kurenaido-jp {
+  font-family: "Zen Kurenaido", sans-serif;
+}
+.ff-kufi-ab {
+  font-family: "Reem Kufi", sans-serif;
+}
+.ff-nanum-pen-kr {
+  font-family: "Nanum Pen Script", cursive;
+}

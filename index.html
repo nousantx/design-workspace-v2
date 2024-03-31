@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>NSX Design Workspace v2</title>
+    <meta name="description" content="NSX Design Workspace v2" />
+    <meta name="keywords" content="design, workspace, css, framework" />
+    <!-- all styles -->
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <link rel="stylesheet" href="/src/css/color.css" />
+    <!-- <link rel="stylesheet" href="/src/css/global.css" /> -->
+    <link rel="stylesheet" href="/src/css/google-icons.css" />
+    <link rel="stylesheet" href="/src/icons/all.css" />
+    <link rel="stylesheet" href="/src/css/tenox-icons.css" />
+    <style>
+      :root {
+        --grid-size: 100% + 1px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+      }
+    </style>
+    <!-- tenoxui -->
+    <script src="/src/js/tenoxui/v0.7/tenoxui.min.js"></script>
+    <script>
+      const content = {
+        width: 1280,
+        height: 768,
+        background: "#0d0d0d", // transparent
+      };
+    </script>
+  </head>
+  <body class="bg-neutral-800 text-neutral-100 ff-lexend h-100vh">
+    <main class="p-10vw w-full flex col flex-parent-start">
+      <!-- Watermark -->
+      <header class="mb-3rem">
+        <h1>Design Workspace V2</h1>
+        <p class="text-neutral-200">By NOuSantx</p>
+      </header>
+      <!-- Content -->
+      <div id="scontent" class="center br-1rem relative mv-3rem" hidden>
+        <!-- paste your code here -->
+        <div class="center gap-1.5rem">
+          <div class="relative center box-5rem">
+            <i
+              class="vic vi-icon-tenox_v fs-5rem absolute text-approve-400"
+            ></i>
+            <i class="vic vi-icon-tenox_t fs-5rem absolute"></i>
+          </div>
+          <header>
+            <h1>Design Workspace V2</h1>
+            <p class="text-neutral-200">By NOuSantx</p>
+          </header>
+        </div>
+        <!-- end of rendered code -->
+      </div>
+
+      <div class="relative">
+        <!-- Paste your content here -->
+        <div
+          id="content"
+          class="center relative w-600px h-200px bg-primary-900"
+        >
+          <div class="center gap-1.5rem">
+            <div class="relative center box-5rem">
+              <i
+                class="vic vi-icon-tenox_v fs-5rem absolute text-primary-400"
+              ></i>
+              <i class="vic vi-icon-tenox_t fs-5rem absolute"></i>
+            </div>
+            <header>
+              <h1>Design Workspace V2</h1>
+              <p class="text-neutral-200">By NOuSantx</p>
+            </header>
+          </div>
+        </div>
+        <!-- end paste code -->
+
+        <!-- watermark: not visible when download -->
+        <div class="absolute t-0 l-0 w-full h-full p-1rem opa-0.1">
+          <header class="center text-neutral-100 jc-start gap-6px">
+            <!-- <span class="ms-round fs-1rem">image</span> -->
+            <div class="box-20px center bg-neutral-100 br-4px">
+              <i class="txi ti-vantenox text-primary-900"></i>
+            </div>
+            <p>by NOuSantx</p>
+          </header>
+        </div>
+
+        <!-- grid -->
+        <div class="content-grid">
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+        </div>
+      </div>
+
+      <div class="content-width bg-approve-800 br-4px h-2px none"></div>
+      <div class="content-width bg-approve-800 br-4px h-2px none"></div>
+    </main>
+
+    <!-- Navbar -->
+    <div
+      class="navbar-toggler bg-neutral-900 position-fixed l-0 t-0 center column gap-1rem p-12px z-9998 radius-bottom-5px"
+    >
+      <div class="btn-icon" onclick="showNavbar()">
+        <span class="ms-line text-neutral-100">expand_more</span>
+      </div>
+    </div>
+    <nav
+      class="bg-neutral-900 h-full position-fixed l-0 t-0 center column gap-1rem p-12px z-9999"
+    >
+      <div class="btn-icon" onclick="showNavbar()">
+        <span class="ms-line text-neutral-100">expand_less</span>
+      </div>
+      <div class="btn-icon" id="generateButton">
+        <span class="ms-line text-neutral-100">download</span>
+      </div>
+      <div class="btn-icon" onclick="gridContentShow()">
+        <span class="ms-line text-neutral-100">fullscreen</span>
+      </div>
+      <div class="btn-icon mt-auto" onclick="darkModeSwitch()">
+        <span class="ms-line text-neutral-100">nights_stay</span>
+      </div>
+      <div class="btn-icon" onclick="rtlSwitch()">
+        <span class="ms-line text-neutral-100">swap_horiz</span>
+      </div>
+    </nav>
+    <!-- script -->
+    <!-- color generator -->
+    <script src="/src/js/color.js"></script>
+    <!-- all styles -->
+
+    <script src="/src/js/downloader.js"></script>
+    <!-- <script src="/dist/js/bundle.js"></script> -->
+    <script>
+      const trans_all = "tr-prop-all tr-time-0.4s tr-timing ease";
+      makeStyles({
+        // "nav,.navbar-toggler": trans_all,
+        // "*": trans_all, // apply transition to all element
+        ".btn-icon": {
+          // "": "box-30px display-flex flex-parent-center br-4px cursor-pointer",
+          "": "box-2rem display-flex flex-parent-center cursor-pointer br-4px",
+          span: "fs-1rem",
+        },
+        ".content-grid": {
+          "": `position-absolute t-0 l-0 w-100% h-100% fx-wrap-wrap jc-center ai-stretch display-flex opa-0`,
+          ".grid": "flex-auto-25% bc-[neutral-100] bs-solid bw-1px",
+        },
+        ".content-width": `w-${content.width}px`,
+        ".content-height": `h-${content.height}px`,
+        // "#content": `w-${content.width}px h-${content.height}px bg-${content.background}`,
+        // main: `w-${content.width * 1.3}px`,
+      });
+
+      const btnSize = 0.04;
+      applyHovers({
+        ".btn-icon": [
+          `scale-${1 - btnSize}`,
+          `scale-${1 + btnSize}`,
+          trans_all,
+        ],
+      });
+      tenoxui();
+    </script>
+    <script>
+      let rtl = false;
+      let navShow = false;
+      let darkMode = false;
+      function showNavbar() {
+        navShow = !navShow;
+        const navState = navShow ? "t--100%" : "t-0";
+        makeStyles({
+          nav: navState,
+        });
+      }
+      function rtlSwitch() {
+        rtl = !rtl;
+        const rol = rtl ? "r-0 l-auto" : "l-0 r-auto";
+        makeStyles({ nav: rol, ".navbar-toggler": rol });
+      }
+      function darkModeSwitch() {
+        darkMode = !darkMode;
+        const val = darkMode ? (i) => 1000 - i : (i) => i;
+        colorCategories.forEach((category) => {
+          for (let i = 100; i <= 900; i += 100) {
+            const textClassName = `.text-${category}-${i}`;
+            const bgClassName = `.bg-${category}-${i}`;
+            genColor[textClassName] = `tc-[${category}-${val(i)}]`;
+            genColor[bgClassName] = `bg-[${category}-${val(i)}]`;
+          }
+        });
+        makeStyles(genColor);
+      }
+
+      let gridIsShow = false;
+      function gridContentShow() {
+        gridIsShow = !gridIsShow;
+
+        isShow = gridIsShow ? "opa-0.2" : "opa-0";
+
+        makeStyle(".content-grid", isShow);
+      }
+    </script>
+    <script src="/src/js/styles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  </body>
+</html>

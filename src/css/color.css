@@ -1,0 +1,68 @@
+:root {
+  /* Neutral: Azul */
+  --approve-100: #f2f4ff;
+  --approve-200: #bbc8ff;
+  --approve-300: #82a1fd;
+  --approve-400: #4a7ff7;
+  --approve-500: #1363ed;
+  --approve-600: #0653bb;
+  --approve-700: #01438a;
+  --approve-800: #003058;
+  --approve-900: #001726;
+
+  /* Danger: Devilish */
+  --danger-100: #fff7f2;
+  --danger-200: #ffd2be;
+  --danger-300: #fba589;
+  --danger-400: #f27153;
+  --danger-500: #e0391f;
+  --danger-600: #b2170b;
+  --danger-700: #830402;
+  --danger-800: #550000;
+  --danger-900: #260000;
+
+  /* Warning: Thick Yellow */
+  --warning-100: #fefff2;
+  --warning-200: #fbffb9;
+  --warning-300: #fdfd80;
+  --warning-400: #f7ed46;
+  --warning-500: #edd30e;
+  --warning-600: #bb9b05;
+  --warning-700: #8a6a01;
+  --warning-800: #583e00;
+  --warning-900: #261900;
+
+  /* Success: Traffic Green */
+  --success-100: #f2fff3;
+  --success-200: #c1ffc0;
+  --success-300: #96fd8d;
+  --success-400: #70fa59;
+  --success-500: #4ff227;
+  --success-600: #3bbf0d;
+  --success-700: #2e8c03;
+  --success-800: #225900;
+  --success-900: #112600;
+
+  /* Primary: Pheromone Purple */
+  --primary-100: #fff2ff;
+  --primary-200: #fcc0fe;
+  --primary-300: #ec8af5;
+  --primary-400: #c952dd;
+  --primary-500: #911fad;
+  --primary-600: #6a0b8c;
+  --primary-700: #49026a;
+  --primary-800: #2d0048;
+  --primary-900: #160026;
+
+  /* Neutral */
+  --neutral-100: #fafbfc;
+  --neutral-200: #eaeef0;
+  --neutral-300: #dae0e4;
+  --neutral-400: #cbd4d8;
+  --neutral-500: #bcc8cc;
+  --neutral-600: #95a0a3;
+  --neutral-700: #484f50;
+  /* --neutral-800: #222626; */
+  --neutral-800: #141414;
+  --neutral-900: #0d0d0d;
+}
