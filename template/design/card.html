@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NSX Design Workspace v2</title>
+    <!-- all styles -->
+    <link rel="stylesheet" href="/src/css/fonts.css" />
+    <link rel="stylesheet" href="/src/css/color.css" />
+    <link rel="stylesheet" href="/src/css/global.css" />
+    <link rel="stylesheet" href="/src/css/google-icons.css" />
+    <link rel="stylesheet" href="/src/css/tenox-icons.css" />
+    <link rel="stylesheet" href="/src/icons/all.css" />
+    <!-- tenoxui -->
+    <script src="/src/js/tenoxui/v0.7/tenoxui.min.js"></script>
+  </head>
+  <body class="bg-neutral-800 text-neutral-100 ff-lexend">
+    <main>
+      <!-- Copy from here -->
+      <div id="content" class="center relative w-1200px bg-primary-800 p-2rem">
+        <div class="flex center wrap gap-1rem">
+          <div class="fx-300px bg-primary-900 p-2rem br-1rem">
+            <i class="txi ti-vantenox text-success-500 fs-3rem"></i>
+            <header class="mt-2rem">
+              <h1 class="fs-1.3rem">Style Using Tenox</h1>
+              <p class="fs-14px text-neutral-400 mt-8px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                illo.
+              </p>
+            </header>
+          </div>
+          <div class="fx-300px bg-primary-900 p-2rem br-1rem">
+            <i class="txi ti-vantenox text-success-500 fs-3rem"></i>
+            <header class="mt-2rem">
+              <h1 class="fs-1.3rem">Style Using Tenox</h1>
+              <p class="fs-14px text-neutral-400 mt-8px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                illo.
+              </p>
+            </header>
+          </div>
+          <div class="fx-300px bg-primary-900 p-2rem br-1rem">
+            <i class="txi ti-vantenox text-success-500 fs-3rem"></i>
+            <header class="mt-2rem">
+              <h1 class="fs-1.3rem">Style Using Tenox</h1>
+              <p class="fs-14px text-neutral-400 mt-8px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                illo.
+              </p>
+            </header>
+          </div>
+        </div>
+      </div>
+      <!-- end of copy -->
+    </main>
+    <!-- script -->
+
+    <!-- simple tmeplate -->
+    <template>
+      <!-- icon -->
+      <div class="relative center box-5rem mr-1rem">
+        <i class="vic vi-icon-tenox_v fs-5rem absolute text-primary-400"></i>
+        <i class="vic vi-icon-tenox_t fs-5rem absolute"></i>
+      </div>
+      <!-- content -->
+      <header>
+        <h1>Design Workspace V2</h1>
+        <p class="text-neutral-200">By NOuSantx</p>
+      </header>
+    </template>
+
+    <!-- script for styles -->
+    <script src="/dist/styles.bundle.js"></script>
+    <!-- <script src="/src/js/color.js"></script>
+    <script src="/src/js/props.js"></script>
+    <script src="/src/js/styles.js"></script> -->
+    <!-- other styles -->
+    <script>
+      makeStyles({
+        main: "display-flex jc-end",
+      });
+      tenoxui();
+    </script>
+  </body>
+</html>
