@@ -26,8 +26,6 @@ makeStyles({
   ".h-full": "h-100%",
   ".h-mx": "h-100%",
   ".fx-ctr, flex-center, .center": "display-flex flex-parent-center",
-  // ".flex-col-center, .flex-center-col,":
-  //   "display-flex flex-parent-center fd-column",
   ".fx-str": "display-flex flex-parent-[flex-start]",
   ".ai-str, .ai-start": "ai-[flex-start]",
   ".ai-end": "ai-[flex-end]",

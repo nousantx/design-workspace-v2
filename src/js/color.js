@@ -1,8 +1,10 @@
 /*!
+ * file: color.js
  * color class generator v2
  * tenoxui v0.4.3 or higher
  * copyright (c) 2024 nousantx
  */
+
 const colorCategories = [
   "primary",
   "accent",
@@ -12,7 +14,10 @@ const colorCategories = [
   "success",
   "approve",
 ];
+
+// store color class into an object
 const genColor = {};
+
 colorCategories.forEach((category) => {
   for (let i = 100; i <= 900; i += 100) {
     // handle text-color class property
@@ -25,4 +30,5 @@ colorCategories.forEach((category) => {
     genColor[bgClassName] = bgColorValue;
   }
 });
+
 const color = makeStyles(genColor);
