@@ -42,29 +42,46 @@
         <h1>Design Workspace V2</h1>
         <p class="text-neutral-200">By NOuSantx</p>
       </header>
-      <!-- Content -->
-      <div id="scontent" class="center br-1rem relative mv-3rem" hidden>
-        <!-- paste your code here -->
-        <div class="center gap-1.5rem">
-          <div class="relative center box-5rem">
-            <i
-              class="vic vi-icon-tenox_v fs-5rem absolute text-approve-400"
-            ></i>
-            <i class="vic vi-icon-tenox_t fs-5rem absolute"></i>
-          </div>
-          <header>
-            <h1>Design Workspace V2</h1>
-            <p class="text-neutral-200">By NOuSantx</p>
-          </header>
-        </div>
-        <!-- end of rendered code -->
-      </div>
-
       <div class="relative">
+        <!-- Content -->
         <!-- Paste your content here -->
         <div
           id="content"
-          class="center relative w-600px h-200px bg-primary-900"
+          class="center relative box-1000px bg-neutral-900 p-2rem"
+        >
+          <!-- content -->
+          <header class="ta-center">
+            <h1>Hello World!</h1>
+            <p class="text-neutral-200">Only for fun!</p>
+          </header>
+
+          <!-- watermark -->
+          <div class="center absolute bottom-2rem gap-2rem">
+            <div class="center gap-1rem">
+              <div class="relative center box-40px">
+                <i
+                  class="vic vi-icon-tenox_v fs-40px absolute text-neutral-400"
+                ></i>
+                <i class="vic vi-icon-tenox_t fs-40px absolute"></i>
+              </div>
+              <!-- content -->
+              <header>
+                <h1 class="fs-18px">Design Workspace V2</h1>
+                <p class="fs-10px text-neutral-200">By NOuSantx</p>
+              </header>
+            </div>
+            <p>x</p>
+            <div class="center gap-8px">
+              <div class="box-40px bg-neutral-800 br-4px center">
+                <i class="txi ti-vantenox text-neutral-100 fs-32px"></i>
+              </div>
+              <h1 class="fs-24px fw-500">TenoxUI Framework</h1>
+            </div>
+          </div>
+        </div>
+        <div
+          id="contentk"
+          class="center relative w-600px h-200px bg-primary-900 none"
         >
           <div class="center gap-1.5rem">
             <div class="relative center box-5rem">
@@ -91,7 +108,6 @@
             <p>by NOuSantx</p>
           </header>
         </div>
-
         <!-- grid -->
         <div class="content-grid">
           <div class="grid"></div>
@@ -102,11 +118,16 @@
           <div class="grid"></div>
           <div class="grid"></div>
           <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
+          <div class="grid"></div>
         </div>
       </div>
-
-      <div class="content-width bg-approve-800 br-4px h-2px none"></div>
-      <div class="content-width bg-approve-800 br-4px h-2px none"></div>
     </main>
 
     <!-- Navbar -->
@@ -138,15 +159,17 @@
     </nav>
     <!-- script -->
     <!-- color generator -->
+    <!-- <script src="./src/js/color.js"></script> -->
+    <!-- all props -->
+    <!-- <script src="./dist/styles.bundle.js"></script> -->
+    <script src="./src/js/props.js"></script>
     <script src="./src/js/color.js"></script>
-    <!-- all styles -->
-
     <script src="./src/js/downloader.js"></script>
     <!-- <script src="./dist/js/bundle.js"></script> -->
     <script>
       const trans_all = "tr-prop-all tr-time-0.4s tr-timing ease";
       makeStyles({
-        // "nav,.navbar-toggler": trans_all,
+        "nav,.navbar-toggler": trans_all,
         // "*": trans_all, // apply transition to all element
         ".btn-icon": {
           // "": "box-30px display-flex flex-parent-center br-4px cursor-pointer",
@@ -154,8 +177,8 @@
           span: "fs-1rem",
         },
         ".content-grid": {
-          "": `position-absolute t-0 l-0 w-100% h-100% fx-wrap-wrap jc-center ai-stretch display-flex opa-0`,
-          ".grid": "flex-auto-25% bc-[neutral-100] bs-solid bw-1px",
+          "": `position-absolute t-0 l-0 w-100% h-100% fx-wrap-wrap jc-center ai-stretch opa-0.2 display-flex ${trans_all}`,
+          ".grid": "flex-auto-25% bs-solid bw-1px",
         },
         ".content-width": `w-${content.width}px`,
         ".content-height": `h-${content.height}px`,
@@ -177,6 +200,7 @@
       let rtl = false;
       let navShow = false;
       let darkMode = false;
+      let gridIsShow = false;
       function showNavbar() {
         navShow = !navShow;
         const navState = navShow ? "t--100%" : "t-0";
@@ -190,7 +214,9 @@
         makeStyles({ nav: rol, ".navbar-toggler": rol });
       }
       function darkModeSwitch() {
+        // not darkMode
         darkMode = !darkMode;
+        // value
         const val = darkMode ? (i) => 1000 - i : (i) => i;
         colorCategories.forEach((category) => {
           for (let i = 100; i <= 900; i += 100) {
@@ -200,19 +226,21 @@
             genColor[bgClassName] = `bg-[${category}-${val(i)}]`;
           }
         });
+        // apply color
         makeStyles(genColor);
       }
-
-      let gridIsShow = false;
       function gridContentShow() {
         gridIsShow = !gridIsShow;
-
         isShow = gridIsShow ? "opa-0.2" : "opa-0";
-
         makeStyle(".content-grid", isShow);
       }
+      makeStyles({
+        ".none, [hidden]": "display-none",
+      });
     </script>
+    <!-- all styles -->
     <script src="./src/js/styles.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   </body>
 </html>
