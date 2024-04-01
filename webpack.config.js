@@ -1,29 +1,10 @@
 const path = require("path");
 
 module.exports = {
-  entry: {
-    bundle: [
-      "./src/js/color.js",
-      "./src/js/downloader.js",
-      "./src/js/style.js",
-    ],
-  },
+  entry: ["./src/js/props.js", "./src/js/styles.js", "./src/js/color.js"],
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist/js"),
+    path: path.resolve(__dirname, "dist"),
+    filename: "styles.bundle.js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
-      },
-    ],
-  },
+  devtool: "source-map",
 };
