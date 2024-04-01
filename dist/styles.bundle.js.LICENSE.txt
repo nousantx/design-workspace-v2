@@ -1,0 +1,12 @@
+/*!
+ * file: color.js
+ * color class generator v2
+ * tenoxui v0.4.3 or higher
+ * copyright (c) 2024 nousantx
+ */
+
+/*!
+ * file: props.js
+ * type and property
+ * tenoxui v0.4 or higher
+ */

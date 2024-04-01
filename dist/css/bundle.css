@@ -1,0 +1,203 @@
+:root {
+  --approve-100: #f2f4ff;
+  --approve-200: #bbc8ff;
+  --approve-300: #82a1fd;
+  --approve-400: #4a7ff7;
+  --approve-500: #1363ed;
+  --approve-600: #0653bb;
+  --approve-700: #01438a;
+  --approve-800: #003058;
+  --approve-900: #001726;
+  --danger-100: #fff7f2;
+  --danger-200: #ffd2be;
+  --danger-300: #fba589;
+  --danger-400: #f27153;
+  --danger-500: #e0391f;
+  --danger-600: #b2170b;
+  --danger-700: #830402;
+  --danger-800: #550000;
+  --danger-900: #260000;
+  --warning-100: #fefff2;
+  --warning-200: #fbffb9;
+  --warning-300: #fdfd80;
+  --warning-400: #f7ed46;
+  --warning-500: #edd30e;
+  --warning-600: #bb9b05;
+  --warning-700: #8a6a01;
+  --warning-800: #583e00;
+  --warning-900: #261900;
+  --success-100: #f2fff3;
+  --success-200: #c1ffc0;
+  --success-300: #96fd8d;
+  --success-400: #70fa59;
+  --success-500: #4ff227;
+  --success-600: #3bbf0d;
+  --success-700: #2e8c03;
+  --success-800: #225900;
+  --success-900: #112600;
+  --primary-100: #fff2ff;
+  --primary-200: #fcc0fe;
+  --primary-300: #ec8af5;
+  --primary-400: #c952dd;
+  --primary-500: #911fad;
+  --primary-600: #6a0b8c;
+  --primary-700: #49026a;
+  --primary-800: #2d0048;
+  --primary-900: #160026;
+} /*!
+ * Fonts Optionslly Used
+ */
+.ff-asar {
+  font-family: Asar, serif;
+}
+.ff-figtree {
+  font-family: Figtree, sans-serif;
+}
+.ff-gabarito {
+  font-family: Gabarito, cursive;
+}
+.ff-inconsolata {
+  font-family: Inconsolata, monospace;
+}
+.ff-inter {
+  font-family: Inter, sans-serif;
+}
+.ff-jost {
+  font-family: Jost, sans-serif;
+}
+.ff-lora {
+  font-family: Lora, serif;
+}
+.ff-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+.ff-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.ff-serif-jp {
+  font-family: "Noto Serif JP", serif;
+}
+.ff-onest {
+  font-family: Onest, sans-serif;
+}
+.ff-oxygen {
+  font-family: Oxygen, sans-serif;
+}
+.ff-poppins {
+  font-family: Poppins, sans-serif;
+}
+.ff-pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+}
+.ff-amiri-ab {
+  font-family: Amiri, serif;
+}
+.ff-black-han-sans-kr {
+  font-family: "Black Han Sans", sans-serif;
+}
+.ff-dela-gothic-one-jp {
+  font-family: "Dela Gothic One", sans-serif;
+}
+.ff-ma-shan-zheng-cn {
+  font-family: "Ma Shan Zheng", cursive;
+}
+.ff-zhi-mang-zheng-cn {
+  font-family: "Zhi Mang Xing", cursive;
+}
+.ff-serif-cn {
+  font-family: "Noto Serif SC", serif;
+}
+.ff-lexend {
+  font-family: lexend, sans-serif;
+}
+.ff-kurenaido-jp {
+  font-family: "Zen Kurenaido", sans-serif;
+}
+.ff-kufi-ab {
+  font-family: "Reem Kufi", sans-serif;
+}
+.ff-nanum-pen-kr {
+  font-family: "Nanum Pen Script", cursive;
+}
+:root {
+  --full: stretch;
+  --col: column;
+  --fxs: flex-start;
+  --fxe: flex-end;
+  --flex-start: var(--fxs);
+  --flex-end: var(--fxe);
+  --sb: space-between;
+  --tx_s-b: space-between;
+  --sa: space-around;
+  --se: space-evenly;
+  --row-rev: row-reverse;
+  --col-rev: column-reverse;
+  --wrap-rev: wrap-reverse;
+  --repeat-x: repeat-x;
+  --repeat-y: repeat-y;
+  --x-repeat: repeat-x;
+  --y-repeat: repeat-y;
+  --no-repeat: no-repeat;
+  --ib: inline-block;
+  --i-fx: inline-flex;
+  --tx_video: 16/9;
+  --tx_poster: 3/4;
+  --tx_avoid-page: avoid-page;
+  --tx_border-box: border-box;
+  --tx_content-box: content-box;
+  --tx_padding-box: padding-box;
+  --tx_avoid-column: avoid-column;
+  --tx_inline-start: inline-start;
+  --tx_inline-end: inline-end;
+  --tx_inline-block: inline-block;
+  --tx_inline-flex: inline-flex;
+  --tx_inline-grid: inline-grid;
+  --tx_inline-table: inline-table;
+  --tx_list-item: list-item;
+  --tx_scale-down: scale-down;
+  --tx_left-bottom: left bottom;
+  --tx_left-top: left top;
+  --tx_right-bottom: right bottom;
+  --tx_right-top: right top;
+  --tx_min-content: min-content;
+  --tx_fit-content: fit-content;
+  --tx_max-content: max-content;
+  --tx_line-through: line-through;
+  --tx_text-top: text-top;
+  --tx_text-bottom: text-bottom;
+  --tx_break-all: break-all;
+  --tx_break-word: break-word;
+  --tx_keep-all: keep-all;
+  --tx_row-rev: row-reverse;
+  --tx_col-rev: column-reverse;
+  --tx_wrap-rev: wrap-reverse;
+  --tx_fx-start: flex-start;
+  --tx_fx-end: flex-end;
+  --tx_s-between: var(--sb);
+  --tx_s-around: space-around;
+  --tx_s-evenly: space-evenly;
+  --tx_right-top: right top;
+  --tx_right-bottom: right bottom;
+  --tx_left-top: left top;
+  --tx_left-bottom: left bottom;
+  --tx_line-through: line-through;
+  --tx_pre-line: pre-line;
+  --tx_pre-wrap: pre-wrap;
+  --tx_break-spaces: break-spaces;
+  --tx_border-box: border-box;
+  --tx_content-box: content-box;
+  --tx_padding-box: padding-box;
+  --tx_font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tx_font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --tx_font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --tx_default: "Aku Sayang Zeta :)";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
