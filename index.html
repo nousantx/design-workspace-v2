@@ -9,22 +9,10 @@
     <!-- all styles -->
     <link rel="stylesheet" href="./src/css/fonts.css" />
     <link rel="stylesheet" href="./src/css/color.css" />
-    <!-- <link rel="stylesheet" href="./src/css/global.css" /> -->
+    <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/google-icons.css" />
     <link rel="stylesheet" href="./src/icons/all.css" />
     <link rel="stylesheet" href="./src/css/tenox-icons.css" />
-    <style>
-      :root {
-        --grid-size: 100% + 1px;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-      }
-    </style>
     <!-- tenoxui -->
     <script src="./src/js/tenoxui/v0.7/tenoxui.min.js"></script>
     <script>
@@ -44,62 +32,40 @@
       </header>
       <div class="relative">
         <!-- Content -->
-        <!-- Paste your content here -->
+
         <div
           id="content"
-          class="center relative box-1000px bg-neutral-900 p-2rem"
+          class="center relative w-416px h-316px bg-neutral-900 p-1rem"
         >
-          <!-- content -->
-          <header class="ta-center">
-            <h1>Hello World!</h1>
-            <p class="text-neutral-200">Only for fun!</p>
-          </header>
-
-          <!-- watermark -->
-          <div class="center absolute bottom-2rem gap-2rem">
-            <div class="center gap-1rem">
-              <div class="relative center box-40px">
-                <i
-                  class="vic vi-icon-tenox_v fs-40px absolute text-neutral-400"
-                ></i>
-                <i class="vic vi-icon-tenox_t fs-40px absolute"></i>
-              </div>
-              <!-- content -->
-              <header>
-                <h1 class="fs-18px">Design Workspace V2</h1>
-                <p class="fs-10px text-neutral-200">By NOuSantx</p>
-              </header>
-            </div>
-            <p>x</p>
-            <div class="center gap-8px">
-              <div class="box-40px bg-neutral-800 br-4px center">
-                <i class="txi ti-vantenox text-neutral-100 fs-32px"></i>
-              </div>
-              <h1 class="fs-24px fw-500">TenoxUI Framework</h1>
-            </div>
-          </div>
-        </div>
-        <div
-          id="contentk"
-          class="center relative w-600px h-200px bg-primary-900 none"
-        >
-          <div class="center gap-1.5rem">
-            <div class="relative center box-5rem">
-              <i
-                class="vic vi-icon-tenox_v fs-5rem absolute text-primary-400"
-              ></i>
-              <i class="vic vi-icon-tenox_t fs-5rem absolute"></i>
-            </div>
+          <div
+            class="w-full h-full center bs-solid bw-1px bc-primary-700 relative"
+          >
+            <!-- content -->
             <header>
-              <h1>Design Workspace V2</h1>
-              <p class="text-neutral-200">By NOuSantx</p>
+              <p class="fs-10px ls-1.4px text-neutral-300">Introduction</p>
+              <h1 class="fs-1.8rem fw-600 ls-3px">PORTFOLIO</h1>
+              <!-- <h1 class="fs-1.8rem fw-600 ls-3px mt--8px">VITAE</h1> -->
+              <p class="fs-8px ls-1px text-neutral-300">stay tenox</p>
             </header>
+            <div
+              class="absolute b-0 w-full bc-success-700 bs-solid bw-0 bw-top-1px flex jc-[sb] ai-center"
+            >
+              <div class="p-8px bc-approve-700 bs-solid bw-0 bw-right-1px">
+                <h4 class="fs-12px fw-400 ls-2px">NOUSANTX</h4>
+              </div>
+
+              <h4 class="fs-12px fw-400 ls-2px">02-04-2024</h4>
+
+              <div class="p-8px bc-success-700 bs-solid bw-0 bw-left-1px">
+                <h4 class="fs-12px fw-400 ls-2px">VTX</h4>
+              </div>
+            </div>
           </div>
         </div>
         <!-- end paste code -->
 
         <!-- watermark: not visible when download -->
-        <div class="absolute t-0 l-0 w-full h-full p-1rem opa-0.1">
+        <div class="absolute t-0 l-0 w-full h-full p-1.5rem opa-0.1">
           <header class="center text-neutral-100 jc-start gap-6px">
             <!-- <span class="ms-round fs-1rem">image</span> -->
             <div class="box-20px center bg-neutral-100 br-4px">
@@ -109,7 +75,7 @@
           </header>
         </div>
         <!-- grid -->
-        <div class="content-grid">
+        <div class="content-grid tr-time-0 opa-0">
           <div class="grid"></div>
           <div class="grid"></div>
           <div class="grid"></div>
@@ -147,6 +113,9 @@
       <div class="btn-icon" id="generateButton">
         <span class="ms-line text-neutral-100">download</span>
       </div>
+      <a class="btn-icon" aria-label="edit-button" href="./template/design/">
+        <span class="ms-line text-neutral-100">design_services</span>
+      </a>
       <div class="btn-icon" onclick="gridContentShow()">
         <span class="ms-line text-neutral-100">fullscreen</span>
       </div>
@@ -169,7 +138,7 @@
     <script>
       const trans_all = "tr-prop-all tr-time-0.4s tr-timing ease";
       makeStyles({
-        "nav,.navbar-toggler": trans_all,
+        // "nav,.navbar-toggler": trans_all,
         // "*": trans_all, // apply transition to all element
         ".btn-icon": {
           // "": "box-30px display-flex flex-parent-center br-4px cursor-pointer",
@@ -177,7 +146,7 @@
           span: "fs-1rem",
         },
         ".content-grid": {
-          "": `position-absolute t-0 l-0 w-100% h-100% fx-wrap-wrap jc-center ai-stretch opa-0.2 display-flex ${trans_all}`,
+          "": `position-absolute t-0 l-0 w-100% h-100% fx-wrap-wrap jc-center ai-stretch opa-0.2 display-flex`,
           ".grid": "flex-auto-25% bs-solid bw-1px",
         },
         ".content-width": `w-${content.width}px`,
